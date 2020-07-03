@@ -143,6 +143,21 @@ function crearIntegrantes(cantidadIntegrantes) {
   
     return (promedios/numeros.length).toFixed(2);
   }
+
+
+  // pruebas unitarias:
+
+
+  function validarCantidadIntegrantes(cantidad){
+
+    // haciendo expresiones regulares:
+    if(!/^\d+$/.test(cantidad)){
+        return "el campo cantidad solo acepta numeros enteros, no decimales";
+    }
+
+
+    return '';
+}
   
   
 
